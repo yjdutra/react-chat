@@ -4,10 +4,13 @@ import { auth, db } from "../src/services/firebase";
 import { Login } from "../src/components/Login";
 import { Loading } from "../src/components/Loading";
 
+import * as C from "../styles/chat";
+
 import Sidebar from "../src/components/Sidebar";
 
 export default function Home() {
   const [user, loading] = useAuthState(auth);
+  const [userChat, setUserChat] = useState(null);
 
   useEffect(() => {
     if (user) {
@@ -22,8 +25,8 @@ export default function Home() {
   if (!user) return <Login />;
 
   return (
-    <>
-      <Sidebar />
-    </>
+    <C.Container>
+      <Sidebar setUserChat={setUserChat} userChat={userChat} />
+    </C.Container>
   );
 }
