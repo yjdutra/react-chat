@@ -39,22 +39,18 @@ const SidebarHeader = ({ setUserChat }) => {
     );
   };
 
-  const consoleUser = () => {
-    return console.log(user);
-  };
-
   return (
     <C.Container>
       <C.Avatar
-        src={user?.photoURL}
+        src={user.photoURL}
         onClick={() => [auth.signOut(), setUserChat(null)]}
+        alt={"Foto de perfil"}
       />
       <C.Options>
         <MdDonutLarge />
         <MdChat onClick={handleCreateChat} />
         <MdMoreVert />
       </C.Options>
-      <MdChat onClick={consoleUser} />
     </C.Container>
   );
 };
