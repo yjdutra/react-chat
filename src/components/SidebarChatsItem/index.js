@@ -4,7 +4,8 @@ import { db } from "../../services/firebase";
 import * as C from "./styles";
 import { MdPerson } from "react-icons/md";
 
-const getUser = (users, userLogged?.email)[0];
+const getUser = (users, userLogged) =>
+  users?.filter((user) => user !== userLogged?.email)[0];
 
 const SidebarChatsItem = ({ id, users, user, setUserChat, active }) => {
   const [getUserItem] = useCollection(
@@ -26,7 +27,7 @@ const SidebarChatsItem = ({ id, users, user, setUserChat, active }) => {
 
   return (
     <C.Container onClick={handleNewChat} className={active}>
-      {Avatar ? <C.Avatar src={Avatar?.photoURL} /> : <MdPerson />}
+      {Avatar ? <C.Avatar src={Avatar?.photoURL} alt={"profile picture"}/> : <MdPerson />}
       <C.Name>{item.split("@")[0]}</C.Name>
     </C.Container>
   );
