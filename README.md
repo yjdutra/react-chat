@@ -13,7 +13,7 @@ This project was built to practice using Social Login and the [firebase](https:/
 
 It's a chat integrated with firebase, so you can start a conversation with any gmail, the recipient when logging in can see and respond to the message.
 
-<img src="https://github.com/yjdutra/pokedex-pokeapi/blob/main/public/img.png" width="700" height="500"/>
+<img src="https://github.com/yjdutra/pokedex-pokeapi/blob/main/public/img.png](https://github.com/yjdutra/react-chat/blob/main/src/utils/init.png" width="700" height="500"/>
 
 ---
 ## Buy me a coffee
