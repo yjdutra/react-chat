@@ -1,34 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Chat on Next using firebase
 
-## Getting Started
+============
 
-First, run the development server:
+🇧🇷 </br>
+Esse projeto foi construido com o objetivo de se praticar a utilização de Login social e banco de dados do [firebase](https://firebase.google.com/), [Next.js](https://nextjs.org/docs/api-reference/create-next-app) </br>
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Se trata de um chat integrado a firebase, de forma que pode-se iniciar conversa com qualquer gmail, o destinatario ao realizar login pode ver e responder a mensagem.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+🇺🇸 </br>
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+This project was built to practice using Social Login and the [firebase](https://firebase.google.com/), [Next.js](https://nextjs.org/ docs) database /api-reference/create-next-app) </br>
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+It's a chat integrated with firebase, so you can start a conversation with any gmail, the recipient when logging in can see and respond to the message.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<img src="https://github.com/yjdutra/pokedex-pokeapi/blob/main/public/img.png" width="700" height="500"/>
 
-## Learn More
+---
+## Buy me a coffee
 
-To learn more about Next.js, take a look at the following resources:
+🇧🇷 </br>
+Se você usa este projeto, aprendeu algo com ele ou simplesmente gosta dele, considere apoiá-lo comprando um café para mim, para que eu possa dedicar mais tempo a projetos de código aberto como este :)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🇺🇸 </br>
+Whether you use this project, have learned something from it, or just like it, please consider supporting it by buying me a coffee, so I can dedicate more time on open-source projects like this :)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<a href="https://www.buymeacoffee.com/yjdutra" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
+
+## Features
+- Banco de dados integrado ao firebase
+- Google Login social 
+
+---
+
+## Setup
+🇧🇷 </br>
+Clone este repositório para sua área de trabalho e execute `yarn` para instalar todas as dependências.</br>
+Você pode querer olhar em `config.json` para alterar a porta que deseja usar e configurar uma certificação SSL
+
+🇺🇸 </br>
+Clone this repo to your desktop and run `yarn` to install all the dependencies.</br>
+You might want to look into `config.json` to make change the port you want to use and set up a SSL certificate.
+
+---
+
+## Usage
+
+🇧🇷 </br>
+Depois de clonar este repositório em sua área de trabalho, vá para o diretório raiz e execute `yarn` para instalar suas dependências.</br>
+Depois que as dependências estiverem instaladas, você pode executar o `yarn dev` para iniciar o aplicativo. Você poderá acessá-lo em localhost:3000</br>
+Para dar a si mesmo permissões de administrador no chat, você terá que digitar `/role [seu-nome]` no console do aplicativo.
+
+🇺🇸 </br>
+After you clone this repo to your desktop, go to its root directory and run `yarn` to install its dependencies.</br>
+Once the dependencies are installed, you can run  `yarn dev` to start the application. You will then be able to access it at localhost:3000 </br>
+To give yourself administrator permissions on the chat, you will have to type `/role [your-name]` in the app console.
+
+---
