@@ -7,6 +7,7 @@ import { Loading } from "../src/components/Loading";
 import * as C from "../styles/chat";
 
 import Sidebar from "../src/components/Sidebar";
+import Chat from "../src/components/Chat";
 
 export default function Home() {
   const [user, loading] = useAuthState(auth);
@@ -27,6 +28,7 @@ export default function Home() {
   return (
     <C.Container>
       <Sidebar setUserChat={setUserChat} userChat={userChat} />
+      <Chat userChat={userChat}/>
     </C.Container>
   );
 }
